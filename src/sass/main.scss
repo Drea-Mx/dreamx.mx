@@ -1,0 +1,31 @@
+//01 RECURSOS
+@import '01-Recursos/normalize';
+
+// 02 Variables
+
+@import '02-Variables/fuentes';
+@import '02-Variables/colores';
+@import '02-Variables/sizes';
+
+// 03 Fuentes
+
+@import '03-Fuentes/roboto';
+@import '03-Fuentes/open';
+
+// 04 Componentes
+
+@import '04-Componentes/body';
+@import '04-Componentes/fuentes';
+@import '04-Componentes/colores';
+@import '04-Componentes/alinear';
+@import '04-Componentes/coursor';
+@import '04-Componentes/contenedor';
+
+// 05 Partials
+
+@import '05-Partials/menu';
+@import '05-Partials/footer';
+
+// 06 Paginas
+
+@import '06-Paginas/home';
