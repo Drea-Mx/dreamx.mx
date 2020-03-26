@@ -10,6 +10,12 @@
         flex-direction: column
         justify-content: space-around
         .logo
+          a
+            img
+              margin: 0 auto
+              width: 90px
+        .ham
+          display: none
         .blog
         .links
             ul
@@ -20,6 +26,78 @@
                             text-decoration: underline
                             font-family: $roboto
         .social
+            ul
+                display: flex
+                flex-direction: row
+                justify-content: space-around
+                img
+                    width: 15px
+@media (max-width: 640px)
+  .height
+    height: 100vh !important
+    transition: all 300ms ease-in-out
+  #menu
+      width: 100vw
+      height: 70px
+      z-index: 2
+      overflow-y: hidden
+      transition: all 500ms
+      .contenedor
+          z-index: 1
+          position: relative
+          height: 100vh
+          padding: 0 30px
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          .logo
+            position: absolute
+            left: 35px
+            top: 15px
+            img
+              width: 80px
+          .ham
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            position: absolute
+            right: 35px
+            top: 27px
+            width: 30px
+            height: 10px
+            z-index: 3
+            cursor: pointer
+            .line
+              transition: all 300ms
+              height: 1px
+              width: 30px
+              background: white
+          .clicked
+            .line
+              &:nth-child(1)
+                transition: all 300ms
+                margin-top: 9px
+                transform: rotate(45deg)
+                height: 2px
+            .line
+              &:nth-child(2)
+                transition: all 300ms
+                transform: rotate(-45deg)
+                height: 2px
+          .blog
+            margin-top: 70px
+          .links
+              ul
+                  li
+                      margin-bottom: 10px
+                      a
+                          &:hover
+                              text-decoration: underline
+                              font-family: $roboto
+          .social
+            padding-bottom: 70px
+            width: 50%
+            margin: 0 auto
             ul
                 display: flex
                 flex-direction: row

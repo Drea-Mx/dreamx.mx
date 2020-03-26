@@ -12,7 +12,9 @@ var browserSync = require('browser-sync').create();
 gulp.task('default', ['css', 'javascript', 'pug', 'imagenes', 'videos' ], function() {
 
     browserSync.init({
-        server: "./app"
+        server: "./app",
+        // Don't show any notifications in the browser.
+        notify: false
     });
 
     gulp.watch("src/js/*.js", ['javascript']).on('change', browserSync.reload);
